@@ -20,7 +20,7 @@ $hostname = gethostname();
         <hr>
         <!-- <small>PHP Version: <?php echo phpversion(); ?></small> -->
         <p>Hi, there! The current date and time is: 
-            <?php echo (new DateTime('now', new DateTimeZone('America/Sao_Paulo')))->format('F j, Y, g:i a'); ?>
+            <?php echo (new DateTime('now', new DateTimeZone('America/Sao_Paulo')))->format('F j, Y, H:i'); ?>
         </p>
     </div>
 </body>
