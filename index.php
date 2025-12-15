@@ -15,11 +15,13 @@ $hostname = gethostname();
 <body>
     <div class="card">
         <h1>Hello from PHP! 🐘</h1>
-        <p>Served by Nginx.</p>
+        <p>Served by Nginx and K8s</p>
         <p>Running on Pod: <span class="pod"><?php echo $hostname; ?></span></p>
         <hr>
         <!-- <small>PHP Version: <?php echo phpversion(); ?></small> -->
-        <small>Hi, the time now is: <?php echo date('F j, Y, g:i a', time()); ?></small>
+        <p>Hi, there! The current date and time is: 
+            <?php echo (new DateTime('now', new DateTimeZone('America/Sao_Paulo')))->format('F j, Y, g:i a'); ?>
+        </p>
     </div>
 </body>
 </html>
