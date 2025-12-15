@@ -18,7 +18,6 @@ $hostname = gethostname();
         <p>Served by Nginx and K8s</p>
         <p>Running on Pod: <span class="pod"><?php echo $hostname; ?></span></p>
         <hr>
-        <!-- <small>PHP Version: <?php echo phpversion(); ?></small> -->
         <p>Hi, there! The current date and time is: 
             <?php echo (new DateTime('now', new DateTimeZone('America/Sao_Paulo')))->format('F j, Y, H:i'); ?>
         </p>
