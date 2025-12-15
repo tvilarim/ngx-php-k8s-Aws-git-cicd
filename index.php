@@ -19,7 +19,7 @@ $hostname = gethostname();
         <p>Running on Pod: <span class="pod"><?php echo $hostname; ?></span></p>
         <hr>
         <!-- <small>PHP Version: <?php echo phpversion(); ?></small> -->
-        <small>PHP Version: <?php echo "Not of your business"; ?></small>
+        <small>Hi, the time now is: <?php echo date('F j, Y, g:i a', time()); ?></small>
     </div>
 </body>
 </html>
